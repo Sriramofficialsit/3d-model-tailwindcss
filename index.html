@@ -1,0 +1,16 @@
+<div class="flex h-screen flex-col items-center justify-center bg-violet-300">
+  <div class="group h-96 w-96 [perspective:1000px]">
+    <div class="relative h-full w-full rounded-lg shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+      <!-- Front Side -->
+      <div class="absolute inset-0">
+        <div class="h-full w-full rounded-lg text-center shadow-lg shadow-black [backface-visibility:hidden]">
+          <img src="front-image.jpg" alt="Front Image" class="h-full w-full object-cover rounded-lg">
+        </div>
+      </div>
+      <!-- Back Side -->
+      <div class="absolute inset-0 h-full w-full flex items-center justify-center bg-white rounded-lg [backface-visibility:hidden] [transform:rotateY(180deg)]">
+        <h1 class="text-2xl font-bold">Your Text Here</h1>
+      </div>
+    </div>
+  </div>
+</div>
